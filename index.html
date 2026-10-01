@@ -99,8 +99,7 @@ footer{padding:30px 0 42px;border-top:1px solid var(--line);color:var(--muted);f
   <a href="#formacion">Formación</a><a href="#proyecto">Proyecto</a><a href="#contacto">Contacto</a>
  </div>
  <div class="navbuttons">
-  <button class="icon menu" id="menu">☰</button>
-  <button class="icon" id="print">↗</button>
+  <button class="icon menu" id="menu">Menu</button>
  </div>
 </nav>
 </div>
@@ -114,15 +113,15 @@ footer{padding:30px 0 42px;border-top:1px solid var(--line);color:var(--muted);f
    <p class="lead"><strong>Técnico de Soporte, Microinformática y Sistemas</strong> · ASIR & SMR · Cisco CCNA & Cybersecurity · LPIC-1 en preparación.</p>
    <p class="lead" style="margin-top:11px;font-size:.94rem">Mi fuerte es la microinformática y el soporte técnico. También estoy creciendo en sistemas Linux, virtualización, contenedores y DevOps.</p>
    <div class="cta">
-    <a class="btn primary" href="#experiencia">Conocer mi perfil →</a>
-    <a class="btn secondary" href="https://github.com/HugoGonPin/k8s-wordpress-resilient-platform" target="_blank">Ver GitHub ↗</a>
+    <a class="btn primary" href="#experiencia">Conocer mi perfil &rarr;</a>
+    <a class="btn secondary" href="https://github.com/HugoGonPin/k8s-wordpress-resilient-platform" target="_blank">Ver GitHub</a>
    </div>
   </div>
   <div class="hero-card reveal">
    <div class="profile-frame">
     <img class="profile" src="foto-hugo.jpeg" alt="Foto profesional de Hugo González">
    </div>
-   <div class="float-card"><strong>🛠️ Soporte & Sistemas</strong><span>Windows · Linux · Redes · Hardware</span></div>
+   <div class="float-card"><strong>Soporte & Sistemas</strong><span>Windows · Linux · Redes · Hardware</span></div>
   </div>
  </div>
 </section>
@@ -230,13 +229,13 @@ footer{padding:30px 0 42px;border-top:1px solid var(--line);color:var(--muted);f
   <article class="glass project-main reveal">
    <div class="project-top">
     <div class="project-title"><div class="kicker">K3S · WORDPRESS · CLOUDFLARE</div><h3>Plataforma Web Resiliente y Autogestionada</h3><p>Diseño y despliegue de una plataforma WordPress sobre K3s con persistencia desacoplada, autorreparación, réplicas, patrón Sidecar, observabilidad y exposición segura mediante Cloudflare Tunnel.</p></div>
-    <a class="btn secondary repo" href="https://github.com/HugoGonPin/k8s-wordpress-resilient-platform" target="_blank">Repositorio ↗</a>
+    <a class="btn secondary repo" href="https://github.com/HugoGonPin/k8s-wordpress-resilient-platform" target="_blank">Repositorio</a>
    </div>
    <div class="features">
-    <div class="feature"><b>☸ K3s</b><span>Orquestación de contenedores</span></div>
-    <div class="feature"><b>⚡ < 6 s</b><span>Autorecuperación probada</span></div>
-    <div class="feature"><b>🔐 Zero Trust</b><span>Cloudflare Tunnel</span></div>
-    <div class="feature"><b>📊 Grafana</b><span>Prometheus + métricas</span></div>
+    <div class="feature"><b>K3s</b><span>Orquestación de contenedores</span></div>
+    <div class="feature"><b>&lt; 6 s</b><span>Autorecuperación probada</span></div>
+    <div class="feature"><b>Zero Trust</b><span>Cloudflare Tunnel</span></div>
+    <div class="feature"><b>Grafana</b><span>Prometheus + métricas</span></div>
    </div>
    <p class="project-note"><strong>Lo importante para mí:</strong> este proyecto representa mi interés por DevOps e infraestructura, pero también deja claro que es un área en la que estoy construyendo experiencia progresivamente.</p>
   </article>
@@ -248,24 +247,22 @@ footer{padding:30px 0 42px;border-top:1px solid var(--line);color:var(--muted);f
   <article class="glass contact reveal">
    <div><div class="kicker">06 / Contacto</div><h2>¿Buscas a alguien para soporte IT?</h2><p>Estoy interesado principalmente en oportunidades de técnico informático, microinformática, soporte y sistemas en Sevilla provincia. También estoy abierto a seguir creciendo hacia infraestructura y DevOps.</p></div>
    <div class="contactlinks">
-    <a class="contactlink" href="mailto:gonzalezdeeirispinedahugo@gmail.com">✉️ gonzalezdeeirispinedahugo@gmail.com</a>
-    <a class="contactlink" href="tel:+34640257006">☎️ +34 640 257 006</a>
-    <a class="contactlink" href="https://www.linkedin.com/in/hugo-gonzález-de-eiris-pineda-59889b263" target="_blank">in LinkedIn →</a>
-    <a class="contactlink" href="https://github.com/HugoGonPin" target="_blank">◈ GitHub →</a>
+    <a class="contactlink" href="mailto:gonzalezdeeirispinedahugo@gmail.com">gonzalezdeeirispinedahugo@gmail.com</a>
+    <a class="contactlink" href="tel:+34640257006">+34 640 257 006</a>
+    <a class="contactlink" href="https://www.linkedin.com/in/hugo-gonzález-de-eiris-pineda-59889b263" target="_blank">LinkedIn &rarr;</a>
+    <a class="contactlink" href="https://github.com/HugoGonPin" target="_blank">GitHub &rarr;</a>
    </div>
   </article>
  </div>
 </section>
 </main>
 
-<footer><div class="container foot"><span>© 2026 Hugo González De Eiris Pineda</span><span class="mono">support_it → systems → devops</span></div></footer>
+<footer><div class="container foot"><span>© 2026 Hugo González De Eiris Pineda</span><span class="mono">support_it &rarr; systems &rarr; devops</span></div></footer>
 
 <script>
 const nav=document.getElementById('links');
 document.getElementById('menu').onclick=()=>nav.classList.toggle('open');
 document.querySelectorAll('.links a').forEach(a=>a.onclick=()=>nav.classList.remove('open'));
-document.getElementById('print').onclick=()=>window.print();
-document.getElementById('print2').onclick=()=>window.print();
 
 const observer=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible')}),{threshold:.12});
 document.querySelectorAll('.reveal').forEach(x=>observer.observe(x));
